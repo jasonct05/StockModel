@@ -2,7 +2,7 @@ import java.util.*;
 public class StockPriceModel {
 	public static final int STOCK_MARKET_OPEN = 9;
 	public static final int STOCK_MARKET_CLOSE = 16;
-	private static final long WAIT = 1000; // 1 MINUTE REFRESH RATE
+	private static final long WAIT = 1000 * 5; // 5 MINUTE REFRESH RATE. ALLOWS FOR GOOD API CALLS
 			
 	private List<StockPriceView> viewers;
 	private List<StockEntry> stockEntry;
